@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal portfolio</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        /* Styles for header section */
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-color: lightblue;
+        }
+
+        /* Styles for navigation bar */
+        nav {
+            display: flex;
+            margin: auto;
+            width: 90%;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+
+        nav ul li a:hover {
+            background-color: seagreen;
+            border-radius: 2px;
+            color: white;
+        }
+
+        .button-cv,
+        .button-gfc {
+            display: inline-block;
+            margin-left: 0%;
+            border-radius: 5px;
+            transition: background-color 0.5s;
+            background: black;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button-cv:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .button-gfc {
+            background: lightsalmon;
+        }
+
+        .button-gfc:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Styles for body section */
+        .body {
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+
+        .body h1 {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .demo1 {
+            color: orange;
+            margin-bottom: 30px;
+        }
+
+        .demo2 {
+            color: black;
+            line-height: 20px;
+        }
+
+        .button-lrn,
+        .button-hire {
+            background: lightsalmon;
+            padding: 10px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: whitesmoke;
+            display: inline-block;
+            margin: 30px 8px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .button-lrn:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        .button-hire {
+            background: black;
+        }
+
+        .button-hire:hover {
+            background-color: seagreen;
+        }
+
+        span {
+            color: seagreen;
+        }
+
+        /* Styles for image section */
+        .image {
+            width: 45%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 100px;
+        }
+
+        .image img {
+            height: 70%;
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+            transform: translate(-60%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div class="header">
+        <nav>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL2ajAfrkGgPugk0a_fq0RtF0whKxuWBrwdQ&s" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">ACHIVEMENTS</a></li>
+                <li><a href="#">CONTACT ME</a></li>
+                <li><button type="button" class="button-gfc">Get Free Consultant</button></li>
+                <li><button type="button" class="button-cv">DOWNLOAD CV</button></li>
+            </ul>
+        </nav>
+
+        <!-- Body section -->
+        <div class="body">
+            <p class="demo1">GET EVERY SINGLE SOLUTIONS.</p>
+            <h1>Hello <br> I'm Chetan<span>Mehra.</span></h1>
+            <p class="demo2">From concept to deployment, I bring ideas<br> to life as a versatile full stack
+                developer...</p>
+            <button type="button" class="button-lrn">LEARN MORE</button>
+            <button type="button" class="button-hire">HIRE ME</button>
+        </div>
+        <!--Projects(start)-->
+        <table id="projects" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                        <tr>
+                            <td height="180" align="center" valign="middle" colspan="2">
+                                <font face="Verdana" size="7" color="black">
+                                    Projects
+                                </font>
+                                <hr color="black" width="90">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td height="10">
+                                <font face="Times New Roman" size="5" color="black">
+                                    <ul>
+                                        <li>
+                                            BMI Calculator
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Calculator
+                                            <a href="#" style="text-decoration:none" color="#c2c0c3">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Calendar
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            ChatBot
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Contact Saver
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Daily Quiz
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Emplyoyee Record System
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Guess the Number-Game
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Random Password Generator
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Stone Paper Scissor
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Tic Tac Toe
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Tic Tac Toe(GUI)
+                                            <a href="#" style="text-decoration:none">
+                                                ➲
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            ToDo App
+                                            <a href="#" style="text-decoration:none">
+                                                ➲ </a>
+                                        </li>
+
+                                        <li>
+                                            <hr color="#c2c0c3">
+                                            Travel Management System
+                                            <a href="#" style="text-decoration:none"> ➲
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <hr color="#c2c0c3">
+                                    <hr color="#c2c0c3">
+                                    <hr color="#c2c0c3">
+                                    <hr color="#c2c0c3">
+                                </font>
+                            </td>
+
+                            <td width="45%">
+                                <img src="img.png" alt="Project" width="75%">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--Projects(end)-->
+        <!--Achievement(start)-->
+        <table id="achievements" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                        <tr>
+                            <td height="180" align="center" valign="middle">
+                                <font face="Verdana" size="7" color="#4CAF50">
+                                    Achievements
+                                    <hr color="#4CAF50" width="100">
+                                </font>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <font face="Verdana" size="4" color="white">
+                                    <ul>
+                                        <li>
+                                            <b>Intern at Bharat-Intern.</b>
+                                            <ul>
+                                                <li>
+                                                    May 28,2024 - Present.
+                                                </li>
+                                                <li>
+                                                    Write technical articles
+                                                    on programming related topics.
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <hr color="black">
+                                            <hr color="black">
+                                            <hr color="black">
+                                            <ul>
+                                                <li>
+                                                    Conducted events and workshops on
+                                                    different technologies.
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <hr color="black">
+                                            <hr color="black">
+                                            <hr color="black">
+                                            <ul>
+                                               
+                                                <hr color="black">
+                                                <hr color="black">
+                                                <hr color="black">
+                                                <hr color="black">
+                                                <hr color="black">
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+
+                                </font>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--Achievement(end)-->
+        <!--Contact(start)-->
+        <table id="contact" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                        <tr>
+                            <td height="180" align="center" valign="middle" colspan="2">
+                                <font face="Verdana" size="7" color="black">
+                                    Contact
+                                </font>
+                                <hr color="black" width="90">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" valign="top">
+                                <table border="0" width="50%" cellpadding="15" cellspacing="0" align="center"
+                                    bgcolor="black">
+                                    <tr>
+                                        <td width="30%">
+                                            <hr color="black">
+                                            <font face="Verdana" size="4" color="#ffffff">
+                                                Name
+                                            </font>
+                                        </td>
+                                        <td width="70%">
+                                            <font face="Verdana" size="4" color="#ffffff">
+                                                <input type="text" size="40">
+                                            </font>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="30%">
+                                            <font face="Verdana" size="4" color="#ffffff">
+                                                Email
+                                            </font>
+                                        </td>
+                                        <td width="70%">
+                                            <font face="Verdana" size="4" color="#ffffff">
+                                                <input type="email" size="40">
+                                            </font>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="30%">
+                                            <font face="Verdana" size="4" color="#ffffff">
+                                                Number
+                                            </font>
+                                        </td>
+                                        <td width="70%">
+                                            <font face="Verdana" size="4" color="#ffffff">
+                                                <input type="number" size="12">
+                                            </font>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="30%">
+                                            <font face="Verdana" size="4" color="#ffffff">
+                                                Message
+                                            </font>
+                                        </td>
+                                        <td width="70%">
+                                            <font face="Verdana" size="4" color="#ffffff">
+                                                <textarea rows="5" cols="37">
+                                        </textarea>
+                                            </font>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="30%">
+
+                                        </td>
+                                        <td width="70%">
+                                            <button type="Submit">
+                                                <font face="Verdana" size="4" color="black">
+                                                    <b>Submit</b>
+                                                </font>
+                                            </button>
+                                            <hr color="black">
+                                            <hr color="black">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--Contact(end)-->
+        <!--Footer1(start)-->
+        <table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                        <tr>
+                            <td width="13%" valign="top">
+                                <b>LinkedIn</b>
+                                <a href="#" style="text-decoration:none">
+                                    ➲
+                                </a>
+                            </td>
+
+                            <td>
+                                |
+                            </td>
+
+                            <td width="13%" valign="top">
+                                <b>GitHub</b>
+                                <a href="#" style="text-decoration:none">
+                                    ➲
+                                </a>
+                            </td>
+
+                            <td>
+                                |
+                            </td>
+
+                            <td width="13%" valign="top">
+                                <b>HackerRank</b>
+                                <a href="#" style="text-decoration:none">
+                                    ➲
+                                </a>
+                            </td>
+
+                            <td>
+                                |
+                            </td>
+
+                            <td width="13%" valign="top">
+                                <b>Facebook.</b>
+                                <a href="#" style="text-decoration:none">
+                                    ➲
+                                </a>
+                            </td>
+
+                            <td>
+                                |
+                            </td>
+
+                            <td width="13%" valign="top">
+                                <b>Twitter</b>
+                                <a href="#" style="text-decoration:none">
+                                    ➲
+                                </a>
+                            </td>
+
+                            <td>
+                                |
+                            </td>
+
+                            <td width="13%" valign="top">
+                                <b>Instagram</b>
+                                <a href="#" style="text-decoration:none">
+                                    ➲
+                                </a>
+                            </td>
+
+                            <td>
+                                |
+                            </td>
+
+                            <td width="13%" valign="top">
+                                <b>Email</b>
+                                <a href="#" style="text-decoration:none">
+                                    ➲
+                                </a>
+                            </td>
+
+                            <td>
+                                |
+                            </td>
+
+                            <td width="13%" valign="top">
+                                <b>Website</b>
+                                <a href="#" style="text-decoration:none">
+                                    ➲
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--Footer1(end)-->
+
+
+        <!--Footer2(start)-->
+        <table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+                        <tr>
+                            <td width="80%" valign="top">
+                                <font face="Verdana" color="#4CAF50" size="5">
+                                    ©Copyright 2050 by nobody.
+                                    All rights reserved.
+                                </font>
+                            </td>
+
+                            <td width="10%">
+                                <font face="arial" color="black" size="5">
+                                    <a href="#header" style="text-decoration:none">
+                                        <font face="Verdana" color="#4CAF50" size="6">
+                                            <b>TOP</b>
+                                        </font>
+                                    </a>
+                                </font>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--Footer2(end)-->
+
+
+        <!-- Image section -->
+        <div class="image">
+            <img src="">
+        </div>
+    </div>
+</body>
+
+</html>
